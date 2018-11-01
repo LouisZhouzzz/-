@@ -1,0 +1,22 @@
+<!--pages/help/help.wxml-->
+<swiper indicator-dots="true"
+  autoplay="true" interval="3000">
+
+    <swiper-item>
+      <image src="/pages/image/for1.jpg" class="slider-image" width="375" mode='aspectFill' />
+    </swiper-item>
+    <swiper-item>
+      <image src="/pages/image/sos.jpg" class="slider-image" width="375"  mode='aspectFill'/>
+    </swiper-item>
+      <swiper-item>
+      <image src="/pages/image/AED.jpg" class="slider-image" width="375"  mode='aspectFill'/>
+    </swiper-item>
+
+</swiper>
+
+<button type="primary" bindtap='callClick'> {{btntext}}</button>
+<button type="default" bindtap='getStateClick'> 当前位置</button>
+<view class="video-item">
+  <video src="http://10.34.24.35:8080/examples/1.mp4"   controls ></video>
+</view>
+<text class='video-desc'>AED视频教程</text> 

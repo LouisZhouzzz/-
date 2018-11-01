@@ -1,0 +1,22 @@
+<!--index.wxml--><image src='/pages/image/index.jpg' class='index-image' mode='aspectFill'></image>
+<view class="container">
+
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>  
+
+</view>
+<view>
+<image src='/pages/image/info.png' class='icon-item'></image>
+<navigator url="/pages/profile/profile" hover-class="navigator-hover" class='navigateWXSS'>个人信息</navigator>
+<image src='/pages/image/others.png' class='icon-item'></image>
+<navigator url="/pages/others/others" hover-class="navigator-hover"  class='navigateWXSS'>紧急联系人</navigator>
+<image src='/pages/image/back.png' class='icon-item'></image>
+<navigator url="/pages/help/help" hover-class="navigator-hover"  class='navigateWXSS'>返回</navigator>
+</view>
+
+

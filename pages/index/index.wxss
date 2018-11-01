@@ -1,0 +1,78 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 228rpx;
+  height: 228rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  position:absolute;
+  top: 125px;
+}
+
+.userinfo-nickname {
+  color: #000;
+  position:absolute;
+  top: 270px;
+  left:180px;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.nav{
+  display: flex;
+ flex-wrap: wrap;
+}
+.nav-item{
+    width:50%;
+    height:250rpx;
+    
+    /*当前父元素设置为伸缩盒 */
+    display: flex;
+    border: 1rpx solid #ccc;
+    /*border-bottom:  1rpx solid #ccc;*/
+    box-sizing: border-box;
+    /* 设置垂直排列*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /*官方推荐字体大小 */
+    font-size: 16px;
+}
+.nav-image{
+  width: 60%;
+  height:500rpx;
+  
+}
+.index-image{
+ width: 100%;
+ height: 200px;
+}
+.navigateWXSS{
+  height: 50px;
+  width: 100%;
+  padding-left: 30px;
+  font-size: 20px;
+  margin: 5px;
+  background-color: #fff;
+  display: flex;
+  align-items: center
+
+}
+.icon-item{
+  height:22px;
+  width: 22px;
+  border-radius: 20%;
+  float: left;
+  position: relative;
+  top: 36px;
+  left:8px;
+}
+page{
+  background-color: #eef
+}

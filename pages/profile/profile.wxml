@@ -1,0 +1,13 @@
+<!--pages/profile/profile.wxml-->
+<view class='info'>
+<text class='info-item'>姓名:{{username}}</text> 
+<text class='info-item'>性别：{{sex}}</text> 
+<text class='info-item'>年龄:{{age}}</text> 
+<text class='info-item'>电话号码:{{tel}}</text> 
+<text class='info-item'>家庭地址：{{addr}}</text> 
+</view>
+
+
+
+
+

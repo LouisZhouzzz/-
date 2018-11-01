@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/help/help",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/profile/profile",
+    "pages/others/others"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list": [
+            {
+              "pagePath": "pages/help/help",
+              "text": "呼救",
+              "iconPath": "pages/image/help.png",
+              "selectedIconPath": "pages/image/help-active.png"
+            },
+      {
+      "pagePath": "pages/index/index",
+      "text": "我的信息",
+      "iconPath": "pages/image/message.png",
+      "selectedIconPath": "pages/image/message-active.png"
+      }
+
+    ]
+  }
+}
