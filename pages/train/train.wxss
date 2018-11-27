@@ -1,0 +1,4 @@
+/* pages/train/train.wxss */
+.train{
+  flex: row;
+}

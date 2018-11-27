@@ -1,0 +1,5 @@
+<!--pages/mysrlf/myself.wxml-->
+<view class='header' style='height:{{h1}}px;'>头部</view>
+<view class='body' style='height:{{h2}}px;'>身体</view>
+
+

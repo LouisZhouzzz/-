@@ -33,36 +33,25 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
-					"name": "12",
-					"pathName": "pages/profile/profile",
+					"name": "我的",
+					"pathName": "pages/myself/myself",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "333",
-					"pathName": "pages/index/index",
+					"name": "test",
+					"pathName": "pages/test/test",
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "333",
-					"pathName": "pages/login/login",
+					"id": 2,
+					"name": "train",
+					"pathName": "pages/train/train",
 					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "555",
-					"pathName": "pages/profile/profile",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "666",
-					"pathName": "pages/index/index"
 				}
 			]
 		}

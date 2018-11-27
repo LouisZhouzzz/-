@@ -1,7 +1,10 @@
 
-  {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#f60",
-    "navigationBarTitleText": "我的信息",
-    "navigationBarTextStyle": "white"
-  }
+
+{
+  "navigationBarBackgroundColor": "#3399FF",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "CPY",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "light"
+}
+

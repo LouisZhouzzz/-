@@ -1,32 +1,36 @@
 {
-  "pages":[
-    "pages/help/help",
+  "pages": [
     "pages/index/index",
-    "pages/login/login",
-    "pages/profile/profile",
-    "pages/others/others"
+    "pages/train/train",
+    "pages/myself/myself",
+    "pages/callHelp/callHelp"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "CPY",
+    "navigationBarTextStyle": "black"
   },
-  "tabBar":{
+  "tabBar": {
     "list": [
-            {
-              "pagePath": "pages/help/help",
-              "text": "呼救",
-              "iconPath": "pages/image/help.png",
-              "selectedIconPath": "pages/image/help-active.png"
-            },
       {
-      "pagePath": "pages/index/index",
-      "text": "我的信息",
-      "iconPath": "pages/image/message.png",
-      "selectedIconPath": "pages/image/message-active.png"
+        "pagePath": "pages/index/index",
+        "text": "呼救",
+        "iconPath": "/image/tabbar/index.png",
+        "selectedIconPath": "/image/tabbar/index-selected.png"
+      },
+      {
+        "pagePath": "pages/train/train",
+        "text": "培训",
+        "iconPath": "/image/tabbar/train.png",
+        "selectedIconPath": "/image/tabbar/train-selected.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "/image/tabbar/myself.png",
+        "selectedIconPath": "/image/tabbar/myself-selected.png"
       }
-
     ]
   }
 }
