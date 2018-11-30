@@ -15,10 +15,28 @@ Page({
       latitude: '',
       longitude: '',
       width: 50,
-      height: 50
+      height: 50,
+      location:''
     }],
   },
-  
+  //重新定位 获取位置
+  reGetLoc:function(){
+    var that = this;
+    that.viewLocation();
+  },
+
+//用chooseLocation方法获取当前位置名称
+  locationName:function(){
+    var that = this;
+    wx.chooseLocation({
+      success: function(res) {
+        that.setData({location:res.name});
+        console.log('位置名称:', res.name);
+        return res.name;
+      },
+    })
+  },
+
   //获取位置
   viewLocation: function () {
     var that = this;
@@ -67,9 +85,11 @@ Page({
  },
 
   callCPY:function(){
+    var that = this;
+    let name = that.locationName();
     wx.showModal({
       title: '呼救',
-      content: '您是否在地图中显示的位置,并确认呼救?',
+      content: '您是否在位置:'+name+',并确认呼救?',
       success:function(res){
         if (res.confirm == true){
           wx.makePhoneCall({
@@ -102,6 +122,7 @@ Page({
     that.showScoreAnimation(rightItems, totalItems);
     that.getH();
     that.viewLocation();
+   // that.locationName();
   },
 
   showScoreAnimation: function (rightItems, totalItems) {

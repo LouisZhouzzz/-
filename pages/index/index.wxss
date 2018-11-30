@@ -1,52 +1,65 @@
 /**index.wxss**/
-page{
+
+page {
   /* background-color: #3399FF */
 }
-.header{
+
+.header {
   height: 40%;
-  background-color: #3399FF;
+  background-color: #39f;
 }
 
 /* 圆形进度条 */
- 
+
 .circleBar {
   width: 100%;
   height: auto;
   overflow: hidden;
   position: relative;
 }
- 
+
 .cir {
   display: inline-block;
   background-color: #eee;
   border-radius: 100%;
 }
- 
+
 .top {
   text-align: center;
 }
- 
+
 .centerWord {
   width: 100%;
   position: absolute;
   top: 40px;
   left: 0;
   text-align: center;
-  color: #3399FF;
-}
-.cpy{
-  text-align:center;
-  margin-top:85%;
+  color: #39f;
 }
 
-.btn-cpy{
+
+.getLoc {
+  display: inline-block;
+  margin-left: 20rpx;
+  margin-top: 70%;
+  background: white;
+  border-radius: 100%;
+}
+
+.getLoc .getLoc-img {
+  width: 40px;
+  height: 40px;
+}
+
+.cpy {
+  margin-bottom: 15%;
+  display: block;
+}
+
+.cpy .btn-cpy {
+  margin-left: 300rpx;
+  display: inline-block;  
   width: 150rpx;
   height: 150rpx;
-  display: inline-block;
   border-radius: 100%;
-  background: red;
-  color: white;
-  font-size: 25px;
-  }
-
-
+}

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/train/train",
     "pages/myself/myself",
-    "pages/callHelp/callHelp"
+    "pages/callHelp/callHelp",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",

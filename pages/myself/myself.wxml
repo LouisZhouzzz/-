@@ -1,5 +1,17 @@
 <!--pages/mysrlf/myself.wxml-->
-<view class='header' style='height:{{h1}}px;'>头部</view>
-<view class='body' style='height:{{h2}}px;'>身体</view>
+<!-- 头部 -->
+<view class='header' style='height:{{h1}}px;width:100%;'>
 
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<!-- 主体 -->
+<view class='body' style='height:{{h2}}px;width:100%;'>
+ 
 
+</view>

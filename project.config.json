@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
 	"appid": "wxfb685c29320f502a",
-	"projectname": "%E5%91%BC%E5%8F%AB%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"projectname": "CPR%E5%91%BC%E6%95%91",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -51,6 +51,12 @@
 					"id": 2,
 					"name": "train",
 					"pathName": "pages/train/train",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
 					"query": ""
 				}
 			]

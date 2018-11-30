@@ -1,8 +1,26 @@
 /* pages/mysrlf/myself.wxss */
 .header{
-  background: rgba(0, 0, 0, .1);
+  background:#3399FF;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+  margin-top: 8px;
 }
 
 .body{
-  background: yellow;
+  
 }
