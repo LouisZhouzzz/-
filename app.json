@@ -4,7 +4,8 @@
     "pages/train/train",
     "pages/myself/myself",
     "pages/callHelp/callHelp",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/announcement/announcement"
   ],
   "window": {
     "backgroundTextStyle": "light",

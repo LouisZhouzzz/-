@@ -1,6 +1,9 @@
 /* pages/mysrlf/myself.wxss */
-.header{
-  background:#3399FF;
+page{
+  height: 100%;
+}
+.header {
+  background: #39f;
 }
 
 .userinfo {
@@ -21,6 +24,61 @@
   margin-top: 8px;
 }
 
-.body{
-  
+.body {
 }
+
+.nav {
+  background-color: #428fd0;
+  height: 5vh;
+  line-height: 5vh;
+  font-size: 12px; }
+
+swiper {
+  height: 55vh;
+  padding-bottom: 100rpx;
+  box-sizing: border-box; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  line-height: 2em;
+  text-align: center; }
+  .nav .item {
+    color: white;
+    flex-grow: 1; }
+    .nav .item.checked {
+      color: black;
+      background-color: #E9F1F7; }
+    .nav .item .type-radio {
+      padding: 0.5em 0; }
+
+
+
+
+
+.list {
+  width: 100%; }
+
+.list-item {
+  border-radius: 0;
+  height: 100rpx;
+  padding-right: 0;
+  padding-left: 1em;
+  background-color: white !important;
+  text-align: left;
+  font-size: 16px;
+  max-height: 100rpx;
+  transition: 500ms linear 0ms;
+  overflow: hidden; }
+  .list-item:nth-child(n + 2) {
+    box-shadow: 0 0 30px 0 #e0e0e0; }
+  .list-item image {
+    float: right;
+    height: 50rpx;
+    width: 50rpx;
+    margin: 25rpx 10rpx 0; }
+  .list-item .title {
+    height: 100rpx;
+    line-height: 100rpx; }
+  .list-item.list-item-hover {
+    background-color: #ccc; }

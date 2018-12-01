@@ -17,7 +17,20 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   
-  
+  // 分享给好友的事件
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: 'CPR呼救小程序',
+      path: '/pages/index/index/user?id=123'
+    }
+  },
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */
