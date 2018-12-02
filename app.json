@@ -1,10 +1,12 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/train/train",
-    "pages/myself/myself",
     "pages/callHelp/callHelp",
+    "pages/train/train",
+    "pages/train_cpr/train_cpr",
+    "pages/myself/myself",
     "pages/test/test",
+    "pages/feedback/feedback",
     "pages/announcement/announcement"
   ],
   "window": {

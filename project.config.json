@@ -33,18 +33,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
 					"name": "我的",
 					"pathName": "pages/myself/myself",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "test",
-					"pathName": "pages/test/test",
 					"query": ""
 				},
 				{
@@ -58,6 +52,35 @@
 					"name": "test",
 					"pathName": "pages/test/test",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "呼救",
+					"pathName": "pages/callHelp/callHelp",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "意见反馈",
+					"pathName": "pages/feedback/feedback",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "培训",
+					"pathName": "pages/train/train",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "培训-CPR",
+					"pathName": "pages/train_cpr/train_cpr"
 				}
 			]
 		}

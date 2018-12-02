@@ -86,10 +86,10 @@ Page({
 
   callCPY:function(){
     var that = this;
-    let name = that.locationName();
+    //let name = that.locationName();
     wx.showModal({
       title: '呼救',
-      content: '您是否在位置:'+name+',并确认呼救?',
+      content: '您是否在地图中显示位置并确认呼救?',
       success:function(res){
         if (res.confirm == true){
           wx.makePhoneCall({

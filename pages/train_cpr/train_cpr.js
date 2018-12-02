@@ -1,4 +1,4 @@
-// pages/train/train.js
+// pages/train_cpr/train_cpr.js
 Page({
 
   /**
@@ -6,15 +6,6 @@ Page({
    */
   data: {
 
-  },
-  
-  gototrain_cpr:function(){
-    wx.navigateTo({
-      url: '/pages/train_cpr/train_cpr',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
   },
 
   /**

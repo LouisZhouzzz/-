@@ -29,7 +29,24 @@ Page({
     }
   },
 
+  gotofeedback:function(){
+    wx.navigateTo({
+      url: '/pages/feedback/feedback'
+    });
+  },
+  getUserInfo(e) {
+    if (!e.detail.userInfo) return;
 
+    if (e.currentTarget.dataset.url)
+      wx.navigateTo({
+        url: e.currentTarget.dataset.url
+      });
+
+    this.setData({
+      userInfo: e.detail.userInfo,
+      authorized: true,
+    });
+  },
 
   /**
    * 生命周期函数--监听页面加载

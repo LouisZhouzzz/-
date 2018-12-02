@@ -1,4 +1,14 @@
 /* pages/train/train.wxss */
-.train{
-  flex: row;
+.train {
+  display: table-row flex;
+  flex-direction: row;
+  width: 50%;
+}
+.train_b {
+  width: 10px;
+  height: 10px;
+  display: table;
+}
+.imag {
+  width:50%;
 }

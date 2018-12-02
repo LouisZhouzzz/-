@@ -1,4 +1,16 @@
 <!--pages/train/train.wxml-->
-<view class='train'>
-cnoascnoscmosacnoacnoasn
+<view>
+  <block class='train'>
+   
+      <image bindtap='gototrain_cpr' class="imag" src="../../image/train/CPR_train.jpg"></image>
+      <image class="imag" src="../../image/train/SPORT_train.jpg"></image>
+  
+  </block>
+
+  <block class='train'>
+    
+      <image class="imag" src="../../image/train/KNOW_train.jpg"></image>
+      <image class='imag' src='../../image/train/AED_train.jpg'></image>
+    
+  </block>
 </view>

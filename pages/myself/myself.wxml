@@ -58,7 +58,8 @@
           </label>
         </navigator>
         <!-- 意见反馈按钮 -->
-        <button plain="" bindgetuserinfo="getUserInfo" class="list-item" data-url="" hover-class="list-item-hover" open-type="getUserInfo">
+        <button plain="" bindgetuserinfo="getUserInfo" class="list-item" 
+        data-url="" bindtap='gotofeedback'   hover-class="list-item-hover" open-type="getUserInfo">
           <label>
             <text class="title">意见反馈</text>
             <image class="enter" src="/image/arrow_right.svg"></image>

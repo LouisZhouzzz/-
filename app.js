@@ -1,6 +1,9 @@
 //app.js
+var hotapp = require('utils/hotapp.js');
+
 App({
   onLaunch: function () {
+    hotapp.init('hotapp611019074 ');
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -39,6 +42,7 @@ App({
       PersonInfo:null
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    hotapp: hotapp
   }
 })
