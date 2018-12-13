@@ -1,0 +1,37 @@
+<!--pages/update-info/update-info.wxml-->
+<form>
+  <view class='form'>
+    <view class="zan-cell zan-form__item">
+      <text class="zan-form__title">姓名</text>
+      <input name="name" value='{{name}}' auto-focus class="zan-form__input zan-cell__bd" placeholder="请输入您的姓名" />
+    </view>
+    <view class="zan-cell zan-form__item">
+      <text class="zan-form__title">性别</text>
+      <input name="sex" value='{{sex}}' auto-focus class="zan-form__input zan-cell__bd" placeholder="请输入您的性别" />
+    </view>
+    <view class="zan-cell zan-form__item">
+      <text class="zan-form__title">联系电话</text>
+      <input name="phonenumber" value='{{phonenumber}}' auto-focus class="zan-form__input zan-cell__bd" placeholder="请输入您的联系电话" type='number' />
+    </view>
+    <view class="section">
+      <picker mode="date" value="{{date}}" start="1900-01-01" end="2050-01-01" bindchange="bindDateChange">
+        <view class="section__title">选择出生日期</view>
+        <view class="picker"> {{date}} </view>
+      </picker>
+    </view>
+    <view class="zan-cell zan-form__item">
+      <text class="zan-form__title">紧急联系人姓名</text>
+      <input name="emergencyName" value='{{emergencyName}}' auto-focus class="zan-form__input zan-cell__bd" placeholder="请输入您的紧急联系人姓名" />
+    </view>
+    <view class="zan-cell zan-form__item">
+      <text class="zan-form__title">亲属关系</text>
+      <input name="relationship" value='{{relationship}}' auto-focus class="zan-form__input zan-cell__bd" placeholder="请输入亲属关系" />
+    </view>
+    <view class="zan-cell zan-form__item">
+      <text class="zan-form__title">紧急联系人电话</text>
+      <input name="hemergencyPhonenumber" value='{{emergencyPhonenumber}}' auto-focus class="zan-form__input zan-cell__bd" placeholder="请输入紧急联系人联系电话" type='number' />
+    </view>
+  </view>
+
+  <button form-type="submit" class="zan-btn zan-btn--sprimary" hover-class='submit-hover'>提交</button>
+</form>

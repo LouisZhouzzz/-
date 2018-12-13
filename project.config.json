@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -80,7 +80,19 @@
 				{
 					"id": -1,
 					"name": "培训-CPR",
-					"pathName": "pages/train_cpr/train_cpr"
+					"pathName": "pages/train_cpr/train_cpr",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改个人信息",
+					"pathName": "pages/update-info/update-info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改紧急联系人信息",
+					"pathName": "pages/update-emergency/update-emergency"
 				}
 			]
 		}

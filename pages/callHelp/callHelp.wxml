@@ -1,4 +1,6 @@
 <!--pages/callHelp/callHelp.wxml-->
-<map longitude='{{longitude}}' latitude='{{latitude}}' markers='{{markers}}' show-show-location='true' show-compass='true' enable-3D='true' scale='18' style='height:{{h}}px; width:100%;'>
+<map longitude='{{longitude}}' latitude='{{latitude}}' markers='{{markers}}' show-show-location='true' show-compass='true' 
+enable-3D='true' subkey='XLYBZ-7EMRR-2KVWS-WLHLE-LJVJQ-LQF5U' 
+scale='18' style='height:{{h}}px; width:100%;'>
 
 </map>

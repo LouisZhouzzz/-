@@ -11,12 +11,39 @@ Page({
   data: {
    h1:'',
    h2:'',
- 
+    swiper_current:0,
+    _num:0,
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    name:'周召伟',
+    sex:'男',
+    birthday:'1997-10-05',
+    phonenumber:'13750431278',
+    emergencyName:'大周',
+    relationship: '父子',
+    emergencyPhonenumber:'13333333333'
+  },
+
+  gotoUpdateinfo:function(){
+   wx.navigateTo({
+     url: '/pages/update-info/update-info',
+   })
   },
   
+  radioChange(e){
+    var that = this;
+    console.log(e.detail.value);
+    that.setData({ swiper_current: e.detail.value});
+    that.setData({ _num: e.detail.value });
+  },
+  
+  swiperChange(e){
+    var that = this;
+    that.setData({ _num: e.detail.current });      
+  },
+
+
   // 分享给好友的事件
   onShareAppMessage: function (res) {
     if (res.from === 'button') {

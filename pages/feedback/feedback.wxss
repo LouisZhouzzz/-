@@ -137,7 +137,7 @@ page {
   height: 80rpx;
   display: flex;
   margin: 10rpx;
-   background: #17af0f;
+   background: #3399FF;
    border-radius: 10rpx;
   justify-content: center;
   align-items: center;

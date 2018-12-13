@@ -1,3 +1,6 @@
+var QQMapWX = require('../../libs/qqmap-wx-jssdk.js');
+var qqmapsdk;
+
 Page({
 
   /**
@@ -7,8 +10,11 @@ Page({
     timer: '',
     h70:'',
     h30: '',
-    longitude: 113.324520,
-    latitude: 23.099994,
+    btn_address:false,
+    show_address:true,
+    longitude: '',
+    latitude: '',
+    address:'',
     markers: [{
       iconPath: "/image/location.png",
       id: 0,
@@ -23,17 +29,22 @@ Page({
   reGetLoc:function(){
     var that = this;
     that.viewLocation();
+    that.showAdress();
   },
 
-//用chooseLocation方法获取当前位置名称
-  locationName:function(){
+  showAdress:function(){
     var that = this;
-    wx.chooseLocation({
-      success: function(res) {
-        that.setData({location:res.name});
-        console.log('位置名称:', res.name);
-        return res.name;
+    // 调用接口
+    wx.request({
+      url: 'https://apis.map.qq.com/ws/geocoder/v1/?location=' + that.data.latitude + ',' + that.data.longitude + '&key=XLYBZ-7EMRR-2KVWS-WLHLE-LJVJQ-LQF5U&get_poi=1', // 仅为示例，并非真实的接口地址
+
+      header: {
+        'content-type': 'application/json' // 默认值
       },
+      success(res) {
+        console.log(res.data.result.address);
+        that.setData({ address: res.data.result.address});
+      }
     })
   },
 
@@ -77,16 +88,15 @@ Page({
        let b = res.windowHeight * 0.3;
        that.setData({h70: a});
        that.setData({ h30: b });
-       console.log('h70:', that.data.h70);
-       console.log('h30:', b);
-       console.log('height:', res.windowHeight);
+      //  console.log('h70:', that.data.h70);
+      //  console.log('h30:', b);
+      //  console.log('height:', res.windowHeight);
      },
    })
  },
 
   callCPY:function(){
     var that = this;
-    //let name = that.locationName();
     wx.showModal({
       title: '呼救',
       content: '您是否在地图中显示位置并确认呼救?',
@@ -108,6 +118,13 @@ Page({
     })
   },
 
+  btn_showAddress:function(){
+   var that = this;
+    that.showAdress();
+    that.setData({ btn_address:true})
+    that.setData({ show_address:false})
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -122,8 +139,14 @@ Page({
     that.showScoreAnimation(rightItems, totalItems);
     that.getH();
     that.viewLocation();
-   // that.locationName();
+    
+    // 实例化API核心类
+    qqmapsdk = new QQMapWX({
+      key: 'XLYBZ-7EMRR-2KVWS-WLHLE-LJVJQ-LQF5U'
+    });
   },
+
+
 
   showScoreAnimation: function (rightItems, totalItems) {
     /*

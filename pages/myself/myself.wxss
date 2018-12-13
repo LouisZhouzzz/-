@@ -24,18 +24,43 @@ page{
   margin-top: 8px;
 }
 
-.body {
+
+.info{
+  border: 2px solid #e0e0e0;
+  background: rgba(0, 0, 0, 0.02);
+}
+.info-item{
+  padding: 5px 0;
+}
+.info-item:first-child{
+   margin-top: 0;
+  padding: 5px 0;
+}
+.info-title, .info-content{
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 20rpx ;
+}
+.info-title{
+  font-weight: bold;
 }
 
+.update{
+ background: #3399FF;
+ margin: 5px 5px;
+ color: white;
+}
+.update-hover{
+  background: rgb(51, 54, 255);
+}
 .nav {
-  background-color: #428fd0;
-  height: 5vh;
+  background-color: #3399FF;
+  height: 35px;
   line-height: 5vh;
-  font-size: 12px; }
+  font-size: 18px; }
 
 swiper {
   height: 55vh;
-  padding-bottom: 100rpx;
   box-sizing: border-box; }
 
 .nav {
@@ -46,12 +71,14 @@ swiper {
   .nav .item {
     color: white;
     flex-grow: 1; }
-    .nav .item.checked {
+     .nav .item.checked {
       color: black;
-      background-color: #E9F1F7; }
-    .nav .item .type-radio {
-      padding: 0.5em 0; }
-
+      background-color: #E9F1F7; } 
+    /* .nav .item .type-radio {
+      padding: 0.5em 0; } */
+type-radio{
+  width: 49%;
+}
 
 
 

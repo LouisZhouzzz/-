@@ -1,0 +1,87 @@
+/* pages/update-info/update-info.wxss */
+
+.form {
+  background-color: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+input {
+  display: block;
+  height: 1.4rem;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: UICTFontTextStyleBody;
+  min-height: 1.4rem;
+}
+
+.section{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+.section__title{
+  font-weight: bold;
+}
+.section__title, .picker {
+  padding:12px 15px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 26px;
+}
+.submit-hover{
+  background: rgb(51, 54, 255) !important;
+}
+.zan-btn {
+  position: relative;
+  color: #333;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  border: 1rpx solid #e5e5e5;
+  font-size: 18px;
+  line-height: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.zan-btn--sprimary {
+  margin:5px 5px;
+  color: #fff;
+  background-color: #3399FF;
+}
+
+.zan-cell {
+  position: relative;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.zan-form__item {
+  line-height: 26px;
+  border-bottom: 1px solid #eee;
+}
+
+.zan-form__title {
+  float: left;
+  width: 80px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.zan-form__input {
+  min-height: 26px;
+}
+
+.zan-cell__bd {
+  flex: 1;
+}

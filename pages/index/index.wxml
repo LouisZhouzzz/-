@@ -7,11 +7,21 @@
       </view>
     </view>
   </view>
+  <view style='margin-bottom:0;'>
+  <button class='btn_address' bindtap='btn_showAddress' hidden='{{btn_address}}'>显示当前地址名称</button>
+  <view class='address' hidden='{{show_address}}'>
+   <image class='show_loc' src='/image/show_loc.svg'></image>
+   <view class='address-title'>{{address}}</view>
+   </view>
+  </view>
 </view>
 
 <!-- longitude='{{longitude}}'
 latitude='{{latitude}}' -->
-<map longitude='{{longitude}}' latitude='{{latitude}}' markers='{{markers}}' show-show-location='true' show-compass='true' enable-3D='true' scale='18' style='height:{{h70}}px;width:100%;'>
+<map longitude='{{longitude}}' latitude='{{latitude}}' markers='{{markers}}' 
+   show-show-location='true' show-compass='true' 
+   enable-3D='true'  subkey='XLYBZ-7EMRR-2KVWS-WLHLE-LJVJQ-LQF5U' 
+     scale='18' style='height:{{h70}}px;width:100%;'>
 
   <cover-view class='getLoc'>
       <cover-image src='/image/getLoc.png' class='getLoc-img' bindtap='reGetLoc'></cover-image>

@@ -9,6 +9,29 @@ page {
   background-color: #39f;
 }
 
+.btn_address{
+  margin-top: 10px;
+  margin-bottom: 3px;
+  width: 50%;
+  background: rgb(84, 231, 84);
+  color: white;
+}
+.show_loc{
+  margin-top: 10spx;
+  height: 25px;
+  width: 25px;
+}
+.address{
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+.address-title{
+  color: black;
+  margin-left: 10px;
+  display: inline-block;
+
+}
+
 /* 圆形进度条 */
 
 .circleBar {

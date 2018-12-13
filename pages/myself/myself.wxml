@@ -15,20 +15,53 @@
 
   <!-- 导航按钮 -->
   <radio-group bindchange="radioChange" class="nav dashboard--nav">
-    <label class="item checked">
-      <view class="type-radio">我的信息</view>
+    <label class="item  {{_num==0?'checked':''}}">
+      <view class="type-radio ">我的信息</view>
       <radio style="display: none" value="0" checked=""></radio>
     </label>
-    <label class="item checked">
+    <label class="item  {{_num==1?'checked':''}} ">
       <view class="type-radio">设置</view>
-      <radio style="display: none" value="1"></radio>
+      <radio style="display: none" value="1" checked=""></radio>
     </label>
   </radio-group>
 
   <!-- 滑动区域 -->
-  <swiper circular="" bindchange="swiperChange" current="0">
+  <swiper circular="" bindchange="swiperChange" current="{{swiper_current}}">
     <!-- 我的信息区域 -->
     <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+      <view class='info'>
+        <view class='info-item'>
+          <view class='info-title'>姓名: </view>
+          <view class='info-content'>{{name}}</view>
+        </view>
+        <view class='info-item'>
+          <view class='info-title'>性别: </view>
+          <view class='info-content'>{{sex}}</view>
+        </view>
+        <view class='info-item'>
+          <view class='info-title'>出生日期: </view>
+          <view class='info-content'>{{birthday}}</view>
+        </view>
+        <view class='info-item'>
+          <view class='info-title'>联系电话: </view>
+          <view class='info-content'>{{phonenumber}}</view>
+        </view>
+        <view class='info-item'>
+          <view class='info-title'>紧急联系人: </view>
+          <view class='info-content'>{{emergencyName}}</view>
+        </view>
+         <view class='info-item'>
+          <view class='info-title'>亲属关系: </view>
+          <view class='info-content'>{{relationship}}</view>
+        </view>
+         <view class='info-item'>
+          <view class='info-title'>紧急联系人电话: </view>
+          <view class='info-content'>{{emergencyPhonenumber}}</view>
+        </view>
+      </view>
+      <view class='info-update'>
+        <button  class="update" hover-class="update-hover" bindtap='gotoUpdateinfo'>修改信息</button>
+      </view>
     </swiper-item>
     <!-- 设置区域 -->
     <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(100%, 0px) translateZ(0px);">
@@ -41,7 +74,7 @@
             <button form-type="submit"></button>
           </label>
         </navigator>
-         <!-- 用户指南 -->
+        <!-- 用户指南 -->
         <navigator class="list-item" hover-class="list-item-hover" url="/pages/announcement/announcement">
           <label>
             <text class="title">用户指南</text>
@@ -49,7 +82,7 @@
             <button form-type="submit"></button>
           </label>
         </navigator>
-          <!-- 隐私政策 -->
+        <!-- 隐私政策 -->
         <navigator class="list-item" hover-class="list-item-hover" url="/pages/announcement/announcement">
           <label>
             <text class="title">隐私政策</text>
@@ -58,15 +91,14 @@
           </label>
         </navigator>
         <!-- 意见反馈按钮 -->
-        <button plain="" bindgetuserinfo="getUserInfo" class="list-item" 
-        data-url="" bindtap='gotofeedback'   hover-class="list-item-hover" open-type="getUserInfo">
+        <button plain="" bindgetuserinfo="getUserInfo" class="list-item" data-url="" bindtap='gotofeedback' hover-class="list-item-hover" open-type="getUserInfo">
           <label>
             <text class="title">意见反馈</text>
             <image class="enter" src="/image/arrow_right.svg"></image>
             <button form-type="submit"></button>
           </label>
         </button>
-       <!-- 分享给好友按钮 -->
+        <!-- 分享给好友按钮 -->
         <button plain="" bindgetuserinfo="getUserInfo" class="list-item" data-url="" hover-class="list-item-hover" open-type="share">
           <label>
             <text class="title">分享给好友</text>
