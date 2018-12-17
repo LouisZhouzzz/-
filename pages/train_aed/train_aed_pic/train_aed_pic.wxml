@@ -1,0 +1,24 @@
+<!--pages/train_aed/train_aed_pic/train_aed_pic.wxml-->
+<view class="title_main">{{title_main}}</view>
+<text>方法/步骤:\n</text>
+<block>
+  <image src='/image/train/train_aed/aed1.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed2.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed3.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed4.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed5.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed6.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed7.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed8.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed9.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed10.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed11.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed12.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed13.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed14.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed15.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed16.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed17.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed18.png' class="aed_pic" mode="widthFix"></image>
+  <image src='/image/train/train_aed/aed19.png' class="aed_pic" mode="widthFix"></image>
+</block>

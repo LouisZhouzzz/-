@@ -74,16 +74,16 @@
             <button form-type="submit"></button>
           </label>
         </navigator>
-        <!-- 用户指南 -->
-        <navigator class="list-item" hover-class="list-item-hover" url="/pages/announcement/announcement">
+         <!-- 用户指南 -->
+        <navigator class="list-item" hover-class="list-item-hover" url="/pages/guide/guide">
           <label>
             <text class="title">用户指南</text>
             <image class="enter" src="/image/arrow_right.svg"></image>
             <button form-type="submit"></button>
           </label>
         </navigator>
-        <!-- 隐私政策 -->
-        <navigator class="list-item" hover-class="list-item-hover" url="/pages/announcement/announcement">
+          <!-- 隐私政策 -->
+        <navigator class="list-item" hover-class="list-item-hover" url="/pages/privacy/privacy">
           <label>
             <text class="title">隐私政策</text>
             <image class="enter" src="/image/arrow_right.svg"></image>

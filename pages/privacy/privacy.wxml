@@ -1,0 +1,3 @@
+<!--pages/privacy/privacy.wxml-->
+<text class="title_h">{{title_h}}</text>
+<text>{{body}}</text>

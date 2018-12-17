@@ -131,9 +131,9 @@
       <!-- 发布 -->
       <view class=" {{show_aur_button?'hide':'show comment_submit_display'}}">
         <view class="comment_submit_tip">
-          <text class="markdown_tip">{{tipOne}}</text>{{tipTwo}}
+          <text class="markdown_tip"></text>
         </view>
-        <button class="commit_submit_btn" type="primary" size="mini" plain="false" form-type="submit">{{submitBtnText}}</button>
+        <button class="btn-reply" size="mini" plain="false" form-type="submit">{{submitBtnText}}</button>
       </view>
       <!-- 授权提示 -->
       <view class=" {{show_aur_button?'show comment_submit_display':'hide'}}">

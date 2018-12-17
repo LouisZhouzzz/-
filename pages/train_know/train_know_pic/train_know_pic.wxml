@@ -1,0 +1,13 @@
+<!--pages/train_know/train_know_pic/train_know_pic.wxml-->
+<view class="title_main">{{title_main}}</view>
+<text style="color:red;">方法/步骤:\n\n</text>
+<image src='/image/train/train_know/know1.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know2.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know3.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know4.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know5.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know6.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know7.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know8.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know9.png' class="know_pic" mode="widthFix"></image>
+<image src='/image/train/train_know/know10.png' class="know_pic" mode="widthFix"></image>

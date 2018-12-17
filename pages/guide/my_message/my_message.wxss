@@ -1,0 +1,4 @@
+/* pages/guide/my_message/my_message.wxss */
+.pic {
+  width: 70%;
+}

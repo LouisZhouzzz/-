@@ -1,0 +1,25 @@
+<!--pages/guide/guide.wxml-->
+<text class="title">{{title}}</text>
+<view class="page">
+  <navigator class="list-item" hover-class="list-item-hover" url="/pages/guide/callHelp/callHelp">
+    <label>
+      <text class="title">求救</text>
+      <image class="enter" src="/image/arrow_right.svg" ></image>
+      <button form-type="submit"></button>
+    </label>
+  </navigator>
+  <navigator class="list-item" hover-class="list-item-hover" url="/pages/guide/train/train">
+    <label>
+      <text class="title">培训</text>
+      <image class="enter" src="/image/arrow_right.svg"></image>
+      <button form-type="submit"></button>
+    </label>
+  </navigator>
+  <navigator class="list-item" hover-class="list-item-hover" url="/pages/guide/my_message/my_message">
+    <label>
+      <text class="title">我的信息</text>
+      <image class="enter" src="/image/arrow_right.svg"></image>
+      <button form-type="submit"></button>
+    </label>
+  </navigator>
+</view>

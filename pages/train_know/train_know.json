@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "WxComment": "/component/WxComment/WxComment"
+  },
+  "navigationBarTitleText": "心脏小知识",
+  "navigationBarBackgroundColor": "#3399FF",
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "light"
+}

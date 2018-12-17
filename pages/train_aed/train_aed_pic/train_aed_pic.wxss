@@ -1,0 +1,9 @@
+/* pages/train_aed/train_aed_pic/train_aed_pic.wxss */
+.title_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aed_pic {
+  width: 100%;
+}

@@ -1,0 +1,6 @@
+/* pages/privacy/privacy.wxss */
+.title_h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

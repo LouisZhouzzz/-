@@ -8,6 +8,15 @@ Page({
 
   },
 
+  gototrain_cpr_pic: function () {
+    wx.navigateTo({
+      url: '/pages/train_cpr/train_cpr_pic/train_cpr_pic',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

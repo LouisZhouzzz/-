@@ -13,14 +13,6 @@ AV.init({
 
 Component({
   properties: {
-    tipOne: {
-      type: String,
-      value: 'WxComment '
-    },
-    tipTwo: {
-      type: String,
-      value: 'Powered by https://github.com/yicm'
-    },
     submitBtnText: {
       type: String,
       value: '回复'

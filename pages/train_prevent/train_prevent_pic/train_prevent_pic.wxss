@@ -1,0 +1,35 @@
+/* pages/train_prevent/train_prevent_pic/train_prevent_pic.wxss */
+.title_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prevent_pic {
+  width: 100%;
+}
+.title {
+  color: rgb(103, 103, 230);
+  font-size: 20px;
+}
+.choose_vp {
+  height: 40px;
+  width:  27.5%;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: row;
+}
+.video_photo1 {
+  width: 50px;
+  height: 15px;
+  font-size: 10px;
+  text-align: center;
+  display: table;
+}
+.video_photo2 {
+  width: 50px;
+  height: 15px;
+  font-size: 10px;
+  margin-left: 5px;
+  text-align: center;
+  display: table;
+}

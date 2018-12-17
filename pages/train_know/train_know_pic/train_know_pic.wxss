@@ -1,0 +1,13 @@
+/* pages/train_know/train_know_pic/train_know_pic.wxss */
+.title_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.know_pic {
+  width: 100%;
+}
+.title {
+  color: rgb(103, 103, 230);
+  font-size: 20px;
+}

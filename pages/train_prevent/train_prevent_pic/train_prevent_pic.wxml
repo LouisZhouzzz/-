@@ -1,0 +1,36 @@
+<!--pages/train_prevent/train_prevent_pic/train_prevent_pic.wxml-->
+<view class="title_main">{{title_main}}</view>
+<text style="color:red;">方法/步骤:\n\n</text>
+<text class="title">一\n</text>
+<text class="body">{{body.train_prevent1}}</text>
+<image src='/image/train/train_prevent/prevent1.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n二\n</text>
+<text class="body">{{body.train_prevent2}}</text>
+<image src='/image/train/train_prevent/prevent2.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n三\n</text>
+<text class="body">{{body.train_prevent3}}</text>
+<image src='/image/train/train_prevent/prevent3.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n四\n</text>
+<text class="body">{{body.train_prevent4}}</text>
+<image src='/image/train/train_prevent/prevent4.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n五\n</text>
+<text class="body">{{body.train_prevent5}}</text>
+<image src='/image/train/train_prevent/prevent5.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n六\n</text>
+<text class="body">{{body.train_prevent6}}</text>
+<image src='/image/train/train_prevent/prevent6.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n七\n</text>
+<text class="body">{{body.train_prevent7}}</text>
+<image src='/image/train/train_prevent/prevent7.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n八\n</text>
+<text class="body">{{body.train_prevent8}}</text>
+<image src='/image/train/train_prevent/prevent8.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n九\n</text>
+<text class="body">{{body.train_prevent9}}</text>
+<image src='/image/train/train_prevent/prevent9.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n十\n</text>
+<text class="body">{{body.train_prevent10}}</text>
+<image src='/image/train/train_prevent/prevent10.png' class="prevent_pic" mode="widthFix"></image>
+<text class="title">\n十一\n</text>
+<text class="body">{{body.train_prevent11}}</text>
+<image src='/image/train/train_prevent/prevent11.png' class="prevent_pic" mode="widthFix"></image>

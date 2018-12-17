@@ -8,12 +8,36 @@ Page({
 
   },
   
-  gototrain_cpr:function(){
+  gototrain_cpr: function () {
     wx.navigateTo({
       url: '/pages/train_cpr/train_cpr',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  gototrain_aed: function () {
+    wx.navigateTo({
+      url: '/pages/train_aed/train_aed',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  gototrain_prevent: function () {
+    wx.navigateTo({
+      url: '/pages/train_prevent/train_prevent',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
+  gototrain_know: function () {
+    wx.navigateTo({
+      url: '/pages/train_know/train_know',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
     })
   },
 

@@ -1,0 +1,18 @@
+<view class="title_main">{{title_main}}</view>
+<text style="color:red;">方法/步骤:\n\n</text>
+<text class="title">一\n</text>
+<text class="body">{{body.train_cpr1}}</text>
+<image src='/image/train/train_cpr/cpr1.png' class="cpr_pic" mode="widthFix"></image>
+<image src='/image/train/train_cpr/cpr2.png' class="cpr_pic" mode="widthFix"></image>
+<text class="title">二\n</text>
+<text class="body">{{body.train_cpr2}}</text>
+<image src='/image/train/train_cpr/cpr3.png' class="cpr_pic" mode="widthFix"></image>
+<text class="title">三\n</text>
+<text class="body">{{body.train_cpr3}}</text>
+<image src='/image/train/train_cpr/cpr4.png' class="cpr_pic" mode="widthFix"></image>
+<text class="title">四\n</text>
+<text class="body">{{body.train_cpr4}}</text>
+<image src='/image/train/train_cpr/cpr5.png' class="cpr_pic" mode="widthFix"></image>
+<text class="title">五\n</text>
+<text class="body">{{body.train_cpr5}}</text>
+<image src='/image/train/train_cpr/cpr6.png' class="cpr_pic" mode="widthFix"></image>

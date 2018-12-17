@@ -95,7 +95,7 @@ image {
   margin-right: 20rpx;
   font-size: 26rpx;
   font-weight: 600;
-  color: #3f9f94;
+  color:#6189e0;
 }
 
 .commnet_date {
@@ -200,7 +200,7 @@ image {
 
 .title_text {
   display: flex;
-  color: #3f9f94;
+  color: rgb(60, 130, 223);
   font-size: 38rpx;
   line-height: 60rpx;
   margin-left: 10rpx;
@@ -244,7 +244,11 @@ image {
 .markdown_tip {
   color: #ee9a49;
 }
-
+.btn-reply{
+  background: #3399FF !important;
+  color:white  !important;
+  border:none  !important;
+}
 .commit_submit_btn {
   width: 150rpx;
   height: 65rpx;

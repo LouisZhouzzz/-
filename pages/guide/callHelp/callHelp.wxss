@@ -1,0 +1,5 @@
+/* pages/guide/callHelp/callHelp.wxss */
+.pic .pic
+{
+  width: 70%;
+}

@@ -1,0 +1,4 @@
+/* pages/guide/train/train.wxss */
+.pic {
+  width: 70%;
+}

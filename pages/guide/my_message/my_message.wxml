@@ -1,0 +1,5 @@
+<!--pages/guide/my_message/my_message.wxml-->
+<text>{{message1}}</text>
+<image src="/image/guide/my_message.png" class="pic" mode='widthFix'></image>
+<text>{{message2}}</text>
+<image src="/image/guide/my_set.png" class="pic" mode='widthFix'></image>

@@ -1,0 +1,7 @@
+<!--pages/guide/train/train.wxml-->
+<text>{{train_body1}}</text>
+<image src="/image/guide/train.png" class="pic" mode='widthFix'></image>
+<text>{{train_body2}}</text>
+<image src="/image/guide/train_video.png" class="pic" mode='widthFix'></image>
+<text>{{train_body3}}</text>
+<image src="/image/guide/train_picture.png" class="pic" mode='widthFix'></image>

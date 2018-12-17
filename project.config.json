@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
 	"appid": "wxfb685c29320f502a",
-	"projectname": "CPR%E5%91%BC%E6%95%91",
+	"projectname": "%E6%98%AF%E5%A4%A7%E6%A6%82",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -92,7 +92,13 @@
 				{
 					"id": -1,
 					"name": "修改紧急联系人信息",
-					"pathName": "pages/update-emergency/update-emergency"
+					"pathName": "pages/update-emergency/update-emergency",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "培训-CPR",
+					"pathName": "pages/train_cpr/train_cpr"
 				}
 			]
 		}
