@@ -1,5 +1,5 @@
 <!--pages/update-info/update-info.wxml-->
-<form>
+<form bindsubmit="formSubmit">
   <view class='form'>
     <view class="zan-cell zan-form__item">
       <text class="zan-form__title">姓名</text>
@@ -15,7 +15,7 @@
     </view>
     <view class="section">
       <picker mode="date" value="{{date}}" start="1900-01-01" end="2050-01-01" bindchange="bindDateChange">
-        <view class="section__title">选择出生日期</view>
+        <view class="section__title">出生日期</view>
         <view class="picker"> {{date}} </view>
       </picker>
     </view>
@@ -35,3 +35,4 @@
 
   <button form-type="submit" class="zan-btn zan-btn--sprimary" hover-class='submit-hover'>提交</button>
 </form>
+

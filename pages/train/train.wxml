@@ -1,8 +1,8 @@
 <!--pages/train/train.wxml-->
+
 <view>
   <block class='train'>
-   
-      <image bindtap='gototrain_cpr' class="imag" src="../../image/train/CPR_train.png"></image>
+      <image bindtap='gototrain_cpr' class="imag" src="http://22937od778.51mypc.cn/img/train/CPRtrain.png"></image>
       <image bindtap='gototrain_prevent' class="imag" src="../../image/train/PREVENT_train.png"></image>
   
   </block>

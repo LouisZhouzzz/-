@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    image1:'http://22937od778.51mypc.cn/img/train_prevent/prevent2.png'
   },
   
   gototrain_cpr: function () {

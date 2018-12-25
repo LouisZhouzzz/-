@@ -1,5 +1,5 @@
 // pages/mysrlf/myself.js
-
+var service = require('../../service/test');
 //获取应用实例
 const app = getApp()
 
@@ -16,13 +16,13 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    name:'周召伟',
-    sex:'男',
-    birthday:'1997-10-05',
-    phonenumber:'13750431278',
-    emergencyName:'大周',
-    relationship: '父子',
-    emergencyPhonenumber:'13333333333'
+    name:'',
+    sex:'',
+    date:'',
+    phonenumber:'',
+    emergencyName:'',
+    relationship: '',
+    emergencyPhonenumber:''
   },
 
   gotoUpdateinfo:function(){
@@ -90,7 +90,7 @@ Page({
         });
       }
     })
-
+   
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -116,8 +116,28 @@ Page({
           })
         }
       })
-    }
+    }  
+ 
+    service.getInfo(
+      (res) => {
+        console.log(res);
+        this.setData({
+          name: res.data.name,
+          sex: res.data.sex,
+          phonenumber: res.data.phonenumber,
+          date: res.data.date,
+          emergencyName: res.data.emergencyName,
+          relationship: res.data.relationship,
+          emergencyPhonenumber: res.data.emergencyPhonenumber
+        })
+      },
+      (e) => {
+        console.log(e)
+      }
+    ); 
+
   },
+
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

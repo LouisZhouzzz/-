@@ -1,6 +1,6 @@
 //app.js
 var hotapp = require('utils/hotapp.js');
-
+var service = require('service/test');
 App({
   onLaunch: function () {
     hotapp.init('hotapp611019074 ');

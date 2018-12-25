@@ -48,6 +48,28 @@ Page({
     })
   },
 
+ //获取openid
+ getOpenid:function(){
+   //调用微信登录接口  
+   wx.login({
+     success: function (loginCode) {
+       var appid = 'wxfb685c29320f502a'; //填写微信小程序appid  
+       var secret = '28f0f8e4ac61994dbb487c15c17d2eb8'; //填写微信小程序secret  
+
+       //调用request请求api转换登录凭证  
+       wx.request({
+         url: 'https://api.weixin.qq.com/sns/jscode2session?appid=' + appid + '&secret=' + secret + '&grant_type=authorization_code&js_code=' + loginCode.code,
+         header: {
+           'content-type': 'application/json'
+         },
+         success: function (res) {
+           console.log("openid:",res.data.openid) //获取openid  
+         }
+       })
+     }
+   })
+ },
+
   //获取位置
   viewLocation: function () {
     var that = this;
@@ -131,6 +153,9 @@ Page({
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
     let that = this;
+    //获取openid
+    that.getOpenid();
+
     // 以下两个是测试数据
     let totalItems = 100;
     let rightItems = 80;

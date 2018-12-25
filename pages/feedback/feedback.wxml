@@ -1,7 +1,7 @@
 <!--pages/feedback/index.wxml-->
 <view class="container">
-    <!-- <import src="/template/addtell.wxml"/>
-    <template is="addtell" data="{{...addtell}}"/> -->
+    <import src="/template/addtell.wxml"/>
+    <template is="addtell" data="{{...addtell}}"/>
   <!--反馈内容-->
      <ul class="scrollwechat"  bindtap="closeimg">
       <scroll-view class="scrollview" scroll-y="true" scroll-into-view="to-{{feedback.length-1}}">

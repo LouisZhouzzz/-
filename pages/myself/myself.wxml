@@ -40,7 +40,7 @@
         </view>
         <view class='info-item'>
           <view class='info-title'>出生日期: </view>
-          <view class='info-content'>{{birthday}}</view>
+          <view class='info-content'>{{date}}</view>
         </view>
         <view class='info-item'>
           <view class='info-title'>联系电话: </view>

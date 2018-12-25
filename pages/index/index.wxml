@@ -27,7 +27,7 @@ latitude='{{latitude}}' -->
       <cover-image src='/image/getLoc.png' class='getLoc-img' bindtap='reGetLoc'></cover-image>
     </cover-view>
   <cover-view class='cpy'>
-      <cover-image src='/image/cpr.jpg' class='btn-cpy' bindtap='callCPY'></cover-image>
+      <cover-image src='/image/cpr.png' class='btn-cpy' bindtap='callCPY'></cover-image>
   </cover-view>
 </map>
 

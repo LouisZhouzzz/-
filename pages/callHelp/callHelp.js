@@ -15,8 +15,65 @@ Page({
       longitude: '',
       width: 50,
       height: 50,
-      location: ''
-    }],
+      location: '',
+    },
+    {
+      iconPath: "/image/volunteer.png",
+      id: 1,
+      latitude: 23.13579,
+      longitude: 113.26440,
+      width: 30,
+      height: 30,
+      location: '',
+      callout:{
+        content:'黄志明 1333333333',
+        color:'#fff',
+        fontSize:'25',
+        borderRadius:'2',
+        bgColor:'#33FF49',
+        padding:'5',
+        display: 'ALWAYS',
+        textAlign: 'center'
+      }
+      },
+      {
+        iconPath: "/image/volunteer.png",
+        id: 2,
+        latitude: 23.13479,
+        longitude: 113.26740,
+        width: 30,
+        height: 30,
+        location: '',
+        callout: {
+          content: '周召伟 1333333333',
+          color: '#fff',
+          fontSize: '25',
+          borderRadius: '2',
+          bgColor: '#33FF49',
+          padding: '5',
+          display: 'ALWAYS',
+          textAlign: 'center'
+        }
+      },
+      {
+        iconPath: "/image/volunteer.png",
+        id: 3,
+        latitude: 23.13079,
+        longitude: 113.26540,
+        width: 30,
+        height: 30,
+        location: ''
+      },
+      {
+        iconPath: "/image/volunteer.png",
+        id: 4,
+        latitude: 23.13279,
+        longitude: 113.26440,
+        width: 30,
+        height: 30,
+        location: ''
+      }
+    ],
   },
 
   //获取位置

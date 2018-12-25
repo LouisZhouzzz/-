@@ -11,10 +11,13 @@ page {
 
 .btn_address{
   margin-top: 10px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   width: 50%;
-  background: rgb(84, 231, 84);
+  background: rgb(84, 226, 231);
   color: white;
+  opacity: 0.8;
+  box-shadow: 5px 5px 2px #39f; 
+  border-radius: 5%;
 }
 .show_loc{
   margin-top: 10spx;
