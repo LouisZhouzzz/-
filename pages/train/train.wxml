@@ -3,14 +3,14 @@
 <view>
   <block class='train'>
       <image bindtap='gototrain_cpr' class="imag" src="http://22937od778.51mypc.cn/img/train/CPRtrain.png"></image>
-      <image bindtap='gototrain_prevent' class="imag" src="../../image/train/PREVENT_train.png"></image>
+      <image bindtap='gototrain_prevent' class="imag" src="http://22937od778.51mypc.cn/img/train/PREVENTtrain.png"></image>
   
   </block>
 
   <block class='train'>
     
-      <image bindtap='gototrain_know' class="imag" src="../../image/train/KNOW_train.jpg"></image>
-      <image bindtap='gototrain_aed' class='imag' src='../../image/train/AED_train.jpg'></image>
+      <image bindtap='gototrain_know' class="imag" src="http://22937od778.51mypc.cn/img/train/KNOWtrain.jpg"></image>
+      <image bindtap='gototrain_aed' class='imag' src='http://22937od778.51mypc.cn/img/train/AEDtrain.jpg'></image>
     
   </block>
 </view>

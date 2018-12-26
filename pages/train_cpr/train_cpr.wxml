@@ -1,16 +1,44 @@
 <!--pages/train_cpr/train_cpr.wxml-->
 
 <view class="choose_vp">
-  <button class="video_photo1" bindtap='gototrain_cpr'>视屏</button>
-  <button class="video_photo2" bindtap='gototrain_cpr_pic'>图文</button>
+  <button bindtap='radioChange' class="item  {{_num==0?'on':''}}" data-current='0' style="width: 50px; height: 15px; font-size: 10px; text-align: center; display: table;">视屏</button>
+  <button bindtap='radioChange' class="item  {{_num==1?'on':''}}" data-current='1'
+  style="width: 50px; height: 15px; font-size: 10px; margin-left: 5px; text-align: center; display: table;">图文</button>
 </view>
+<swiper style="height:{{h}}px" class="swiper" circular="" bindchange="swiperChange" current="{{currentTab}}">
+<swiper-item class="swiper-item">
+<scroll-view scroll-y="true" class="scroll-view">
 <view>
-  <video style="width: 100%;height=400px;margin:0px;" src="https://apd-ugcvideohy.apdcdn.tc.qq.com/vhot2.qqvideo.tc.qq.com/AXJoTktBWZ7CRZ80aFGQvpbGIUWw-56JTsNKmZ_0HgQ4/y0380l2iusn.p712.1.mp4?sdtfrom=v1010&guid=d4fcb4eff0f5231d10e2b16aef45164f&vkey=BE695A22579CBB4255273E3063647C4562BED0D70272B56EE291DDEDA6130E41C82708A1D27A3FFC1647F260F883AE94401F91F6039798EE367B6EAEB0BFAE29C2383E7D336258E8FC15274703A9EB84BB076EDEB4B986D01EFDB9EF5AF2EF607F2E589F25901E9BBC5DA39EF721BB721452442A66F31500&ocid=428873132"
+  <video style="width: 100%;height=400px;margin:0px;" src="http://22937od778.51mypc.cn/img/video/CPR.mp4"
     binderror="videoErrorCallback"></video>
-</view>
 
-<view>
   <view class="WxComment">
     <WxComment tipOne="WxComment " tipTwo="Powered by https://github.com/yicm" submitBtnText="回复" articleID="train_cpr" contentLen='1' theme="light"></WxComment>
   </view>
 </view>
+</scroll-view>
+</swiper-item>
+
+<swiper-item class="swiper-item">
+<scroll-view scroll-y="true" class="scroll-view">
+  <view class="title_main">{{title_main}}</view>
+  <text style="color:red;">方法/步骤:\n\n</text>
+  <text class="title">一\n</text>
+  <text class="body">{{body.train_cpr1}}</text>
+  <image src='http://22937od778.51mypc.cn/img/train/traincpr/cpr1.png' class="cpr_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/traincpr/cpr2.png' class="cpr_pic" mode="widthFix"></image>
+  <text class="title">二\n</text>
+  <text class="body">{{body.train_cpr2}}</text>
+  <image src='http://22937od778.51mypc.cn/img/train/traincpr/cpr3.png' class="cpr_pic" mode="widthFix"></image>
+  <text class="title">三\n</text>
+  <text class="body">{{body.train_cpr3}}</text>
+  <image src='http://22937od778.51mypc.cn/img/train/traincpr/cpr4.png' class="cpr_pic" mode="widthFix"></image>
+  <text class="title">四\n</text>
+  <text class="body">{{body.train_cpr4}}</text>
+  <image src='http://22937od778.51mypc.cn/img/train/traincpr/cpr5.png' class="cpr_pic" mode="widthFix"></image>
+  <text class="title">五\n</text>
+  <text class="body">{{body.train_cpr5}}</text>
+  <image src='http://22937od778.51mypc.cn/img/train/traincpr/cpr6.png' class="cpr_pic" mode="widthFix"></image>
+</scroll-view>
+</swiper-item>
+</swiper>

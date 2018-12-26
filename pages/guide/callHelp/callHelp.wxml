@@ -1,13 +1,13 @@
 <!--pages/guide/callHelp/callHelp.wxml-->
 <text>{{callHelp1}}</text>
-<image src="/image/guide/callHelp_home.png" class="pic" mode="widthFix"></image>
+<image src="http://22937od778.51mypc.cn/img/guide/callHelphome.png" class="pic" mode="widthFix"></image>
 <text>{{callHelp2}}</text>
-<image src="/image/guide/callHelp_condition.png" class="pic" mode="widthFix"></image>
+<image src="http://22937od778.51mypc.cn/img/guide/callHelpcondition.png" class="pic" mode="widthFix"></image>
 <text>{{callHelp3}}</text>
-<image src="/image/guide/callHelp_save.png" class="pic" mode="widthFix"></image>
+<image src="http://22937od778.51mypc.cn/img/guide/callHelpsave.png" class="pic" mode="widthFix"></image>
 <text>{{callHelp4}}</text>
-<image src="/image/guide/callHelp_win1.png" class="pic" mode="widthFix"></image>
+<image src="http://22937od778.51mypc.cn/img/guide/callHelpwin1.png" class="pic" mode="widthFix"></image>
 <text>{{callHelp5}}</text>
-<image src="/image/guide/callHelp_win2.png" class="pic" mode="widthFix"></image>
+<image src="http://22937od778.51mypc.cn/img/guide/callHelpwin2.png" class="pic" mode="widthFix"></image>
 <text>{{callHelp6}}</text>
-<image src="/image/guide/callHelp_end.png" class="pic" mode="widthFix"></image>
+<image src="http://22937od778.51mypc.cn/img/guide/callHelpend.png" class="pic" mode="widthFix"></image>

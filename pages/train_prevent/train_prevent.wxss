@@ -3,6 +3,7 @@
   height: 40px;
   width:  27.5%;
   margin: 0px auto;
+  margin-top: 10px;
   display: flex;
   flex-flow: row;
 }
@@ -20,4 +21,32 @@
   margin-left: 5px;
   text-align: center;
   display: table;
+}
+.title_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prevent_pic {
+  width: 100%;
+}
+.title {
+  font-size: 20px;
+}
+.choose_vp {
+  height: 40px;
+  width:  27.5%;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: row;
+}
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+.swiper-item{
+  height:100%;
+}
+.scroll-view{
+  height:100%;
 }

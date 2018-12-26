@@ -5,24 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentTab:0,
   },
 
-  gototrain_aed: function () {
-    wx.navigateTo({
-      url: '/pages/train_aed/train_aed',
-      success: function (res) { },
-      fail: function (res) { },
-      complete: function (res) { },
-    })
+  // 点击切换页面
+  radioChange(e) {
+    var that = this;
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
   },
 
-  gototrain_aed_pic: function () {
-    wx.navigateTo({
-      url: '/pages/train_aed/train_aed_pic/train_aed_pic',
-      success: function (res) { },
-      fail: function (res) { },
-      complete: function (res) { },
+  // 滑动切换
+  swiperChange(e) {
+    var that = this;
+    that.setData({ currentTab: e.detail.current });
+  },
+
+  //获取屏幕高度
+  getH: function () {
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          h: res.windowHeight
+        });
+        console.log('h:', that.data.h);
+      },
     })
   },
 
@@ -30,7 +43,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    that.getH();
   },
 
   /**
@@ -44,13 +58,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
 
   },
 

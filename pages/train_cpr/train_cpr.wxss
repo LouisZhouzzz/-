@@ -3,21 +3,28 @@
   height: 40px;
   width:  27.5%;
   margin: 0px auto;
+  margin-top: 9px;
   display: flex;
   flex-flow: row;
 }
-.video_photo1 {
-  width: 50px;
-  height: 15px;
-  font-size: 10px;
-  text-align: center;
-  display: table;
+.swiper {
+  height: 100%;
+  width: 100%;
 }
-.video_photo2 {
-  width: 50px;
-  height: 15px;
-  font-size: 10px;
-  margin-left: 5px;
-  text-align: center;
-  display: table;
+.swiper-item{
+  height:100%;
+}
+.scroll-view{
+  height:100%;
+}
+.title_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cpr_pic {
+  width: 100%;
+}
+.title {
+  font-size: 20px;
 }

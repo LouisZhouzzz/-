@@ -1,15 +1,46 @@
 <!--pages/train_aed/train_aed.wxml-->
 <view class="choose_vp">
-  <button class="video_photo1" bindtap='gototrain_aed'>视屏</button>
-  <button class="video_photo2" bindtap='gototrain_aed_pic'>图文</button>
-</view>
-<view>
-  <video style="width: 100%;height=400px;margin:0px;" src="https://apd-a6248578e428cf074b10208cced54e66.v.smtcdns.com/om.tc.qq.com/AHoD1c4QCOdVoMMHPsPRGWrTNYCzGLIdBjOPIx2CLiW8/uwMRJfz-r5jAYaQXGdGnC2_ppdhgmrDlPaRvaV7F2Ic/p0755qlr77v.mp4?sdtfrom=v1010&guid=d4fcb4eff0f5231d10e2b16aef45164f&vkey=28128FDCB6807D8424E4E91929A66EE8BA988B8388BD03644C33B0C1EBC76F921CF566AE69757D4879CE9EC2F6C1EC26C4BA7DF4BE5577B044752EC6AA1343CA7B17521BA2CC8801FEE5F1C3CA01741C63782C913E123E9BCF02EE63CB8CAB0E9ACC7838EAF1225DC1E93B5AF8C797331B26533F0DD76B16"
-    binderror="videoErrorCallback"></video>
+  <button bindtap='radioChange' class="item  {{_num==0?'on':''}}" data-current='0' style="width: 50px; height: 15px; font-size: 10px; text-align: center; display: table;">视屏</button>
+  <button bindtap='radioChange' class="item  {{_num==1?'on':''}}" data-current='1'
+  style="width: 50px; height: 15px; font-size: 10px; margin-left: 5px; text-align: center; display: table;">图文</button>
 </view>
 
+<swiper style="height:{{h}}px" class="swiper" circular="" bindchange="swiperChange" current="{{currentTab}}">
+<swiper-item class="swiper-item">
+<scroll-view scroll-y="true" class="scroll-view">
 <view>
+  <video style="width: 100%;height=400px;margin:0px;" src="http://22937od778.51mypc.cn/img/video/AED.mp4"
+    binderror="videoErrorCallback"></video>
   <view class="WxComment">
     <WxComment tipOne="WxComment " tipTwo="Powered by https://github.com/yicm" submitBtnText="回复" articleID="train_aed" contentLen='1' theme="light"></WxComment>
   </view>
 </view>
+</scroll-view>
+</swiper-item>
+
+<swiper-item class="swiper-item">
+<scroll-view scroll-y="true" class="scroll-view">
+  <view class="title_main">AED</view>
+  <text style="color:red;">方法/步骤:\n\n</text>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed1.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed2.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed3.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed4.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed5.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed6.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed7.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed8.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed9.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed10.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed11.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed12.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed13.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed14.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed15.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed16.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed17.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed18.png' class="aed_pic" mode="widthFix"></image>
+  <image src='http://22937od778.51mypc.cn/img/train/trainaed/aed19.png' class="aed_pic" mode="widthFix"></image>
+</scroll-view>
+</swiper-item>
+</swiper>
